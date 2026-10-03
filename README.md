@@ -16,7 +16,7 @@ Student 6 (Gaoseb): Functions, Integration & Validation (`main.c`)
 Student 7 (Sangungi): Testing, Documentation & Git Coordination (`tests.c` / `tests.h`)
 
 3. System Features
-**Employee Management:** 
+* **Employee Management:** 
 * **Budget Management:**
 * **Supplier Management:** 
 * **Asset Management:** 

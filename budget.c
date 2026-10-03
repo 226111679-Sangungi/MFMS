@@ -16,3 +16,24 @@ printf("Status: WITHIN BUDGET\n");
         printf("Status: OVER BUDGET\n")
     }
 }
+
+void manageBudget(void)
+{
+    float budget;
+    float expenditure;
+    float remaining;
+    printf("\n --- MUNICIPAL BUDGET MANAGEMENT ---\n");
+    scanf("%f", &budget);
+
+    printf("Enter current expenditure: ");
+    scanf("%f", &expenditure);
+
+    remaining = calculateRemaining(budget, expenditure);
+
+    printf("\n--- BUDGET SUMMARY ---\n");
+    printf("Allocated Budget:%.2f\n", budget);
+    printf("Total Expenditure:%.2f\n" , expenditure);
+    printf("Remaining Balance:%.2f\n", remaining);
+
+    checkBudgetStatus(budget, expenditure);
+}

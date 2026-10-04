@@ -38,7 +38,7 @@ int assetManagement() {
 
  int addAsset(){
    
-   for ( int i = 0; i < 4; i++){
+   for ( int i = 0; i < 10; i++){
       if (assetCouner < 10){
          printf("\nEnter asset name:  ");
          scanf("%s" , AssetName[assetCouner]);

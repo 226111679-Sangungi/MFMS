@@ -4,10 +4,6 @@
 
 
 
-int searchAsset();
-int displayAsset();
-
-  
 
 // call this function from the main menu to start asset managemnet
 int assetManagement() {

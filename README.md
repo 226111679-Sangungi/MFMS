@@ -7,13 +7,13 @@ Group Number: 23
 MFMS is a modular, menu-driven C program built for municipal record-keeping. It allows administrators to track and manage employee payroll, departmental budgets, vendor information, and physical municipal assets through an integrated command-line interface.
 
 2. Group Members & Responsibilities
-Student 1 (Hakko): Employee Management (`employees.c` / `employees.h`)
-Student 2 (Kadhikwa): Budget Management (`budget.c` / `budget.h`)
-Student 3 (Shinedima): Supplier Management (`suppliers.c` / `suppliers.h`)
-Student 4 (Kakelo): Asset Management (`assets.c` / `assets.h`)
-Student 5 (Mbahuurua): Reports (`reports.c` / `reports.h`)
-Student 6 (Gaoseb): Functions, Integration & Validation (`main.c`)
-Student 7 (Sangungi): Testing, Documentation & Git Coordination (`tests.c` / `tests.h`)
+Student 1 (Hakko): Employee Management (employees.c / employees.h)
+Student 2 (Kadhikwa): Budget Management (budget.c / budget.h)
+Student 3 (Shinedima): Supplier Management (suppliers.c / suppliers.h)
+Student 4 (Kakelo): Asset Management (assets.c / assets.h)
+Student 5 (Mbahuurua): Reports (reports.c / reports.h)
+Student 6 (Gaoseb): Functions, Integration & Validation (main.c)
+Student 7 (Sangungi): Testing, Documentation & Git Coordination (tests.c / tests.h)
 
 3. System Features
 * **Employee Management:** 

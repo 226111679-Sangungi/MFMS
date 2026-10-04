@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "asset.h"
-
+#include <string.h>
 
 
 
@@ -13,7 +13,7 @@ int assetManagement() {
 
     printf("\n----Asset Management----\n");
     while (done == 0) {
-    printf("Search or Display Asset details\n 1.Search 2.Display 3.Exit\n");
+    printf("Search, Display or add an Asset details\n 1.Search 2.Display 3.Add 4. Exit:  ");
    scanf("%d", &choice);
       switch(choice){
          case 1:
@@ -22,14 +22,52 @@ int assetManagement() {
          case 2:
          displayAsset();
          break;
-         case 3:
+         case 4:
          done = 1;
+         break;
+         case 3:
+         addAsset();
+         break;
+         default:
+         printf("Invalid option picked");
          
       }
     }
     return 0;  
 }
 
+ int addAsset(){
+   
+   for ( int i = 0; i < 4; i++){
+      if (assetCouner < 10){
+         printf("\nEnter asset name:  ");
+         scanf("%s" , AssetName[assetCouner]);
+
+         printf("\nEnter asset PurchaseValue:  ");
+         scanf("%lf", &PurchaseValue[assetCouner]);
+
+         printf("\nEnter asset Department:  ");
+         scanf("%s", Department[assetCouner]);
+
+         printf("\nEnter asset type:  ");
+         scanf("%s" , AssetType[assetCouner]);
+
+         printf("\nEnter asset Condition:  ");
+         scanf("%s", Condition[assetCouner]);
+
+       assetCouner = assetCouner+1;
+       AssetID[assetCouner-1] = assetCouner-1;
+
+       printf("\nAssets entered: %d/10\n", assetCouner);
+
+
+      }else{
+         printf("\nArray is full\n");
+
+      }
+
+   }
+ }
    int searchAsset(){
       int found = 0;
       int searchID;

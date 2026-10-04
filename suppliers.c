@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "suppliers.h"
+#include "validation.h"
 
 #define MaxSuppliers 50
 #define NameLen 100
@@ -16,7 +17,7 @@ static char supplierTowns [MaxSuppliers][TownLen];
 static int supplierCount = 0;
 
 static void addSupplier(void);
-static void displaySuppliers(void);
+void displaySuppliers(void);
 static void searchSupplier(void);
 static void showNameLengths(void);
 static void generateDescriptions(void);
@@ -95,8 +96,8 @@ static void addSupplier(void)
     printf("\nAdd supplier ID: %d\n", supplierIDs[supplierCount - 1]);
     
 }
-static void displaySuppliers(void)
-{
+void displaySuppliers(void) {
+
     if (supplierCount == 0) 
     { 
         printf("\nNo suppliers yet.\n");
@@ -159,7 +160,3 @@ static void clearInputBuffer(void)
     int c;
     while ((c = getchar()) != '\n' && c != EOF) {}
 }
-
-
-
-

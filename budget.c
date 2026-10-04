@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include "budget.h"
+#include "validation.h"
+
 
 float calculateRemaining(float budget,float expenditure)
 {
@@ -8,12 +10,11 @@ float calculateRemaining(float budget,float expenditure)
 
 void checkBudgetStatus(float budget, float expenditure)
 {
-    if (expenditure <= budget)
-}
-printf("Status: WITHIN BUDGET\n");
-{
-    else{
-        printf("Status: OVER BUDGET\n")
+    if (expenditure <= budget) {
+        printf("Status: WITHIN BUDGET\n");
+    }
+    else {
+        printf("Status: OVER BUDGET\n");
     }
 }
 
@@ -22,11 +23,11 @@ void manageBudget(void)
     float budget;
     float expenditure;
     float remaining;
+    
     printf("\n --- MUNICIPAL BUDGET MANAGEMENT ---\n");
-    scanf("%f", &budget);
-
-    printf("Enter current expenditure: ");
-    scanf("%f", &expenditure);
+    
+    budget = (float)getDouble("Enter allocated budget: N$", 0);
+    expenditure = (float)getDouble("Enter current expenditure: N$", 0);
 
     remaining = calculateRemaining(budget, expenditure);
 
@@ -36,4 +37,6 @@ void manageBudget(void)
     printf("Remaining Balance:%.2f\n", remaining);
 
     checkBudgetStatus(budget, expenditure);
+
+    pressEnterToContinue();
 }

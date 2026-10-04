@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "employees.h"
+#include "validation.h"
 
 #define MAX_EMPLOYEES 100
 #define ID_LEN 15
@@ -253,13 +255,13 @@ void displayEmployees(void)
         return;
     }
 
-    printf("\n%-10s %-25s %-15s %-15s %12s\n",
+    printf("\n%-10s %-25s %-15s %-20s %12s\n",
            "ID", "Name", "Department", "Position", "Gross (N$)");
     printf("--------------------------------------------------------------------------------\n");
 
     for (i = 0; i < employeeCount; i++)
     {
-        printf("%-10s %-25s %-15s %-15s %12.2f\n",
+        printf("%-10s %-25s %-15s %-20s %12.2f\n",
                empId[i], empName[i], empDept[i], empPosition[i], empGross[i]);
     }
 
@@ -319,11 +321,11 @@ void searchEmployeeRecords(void)
         {
             if (found == 0)
             {
-                printf("\n%-10s %-25s %-15s %-15s %12s\n",
+                printf("\n%-10s %-25s %-15s %-20s %12s\n",
                        "ID", "Name", "Department", "Position", "Gross (N$)");
                 printf("--------------------------------------------------------------------------------\n");
             }
-            printf("%-10s %-25s %-15s %-15s %12.2f\n",
+            printf("%-10s %-25s %-15s %-20s %12.2f\n",
                    empId[i], empName[i], empDept[i], empPosition[i], empGross[i]);
             found++;
         }
@@ -474,10 +476,4 @@ void employeeMenu(void)
             case 5: printf("Returning to main menu...\n"); break;
         }
     } while (choice != 5);
-}
-
-int main(void)
-{
-    employeeMenu();
-    return 0;
 }

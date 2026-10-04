@@ -17,12 +17,12 @@ Student 6 (!Gaoseb): Functions, Integration & Validation (main.c)
 Student 7 (Sangungi): Testing, Documentation & Git Coordination (tests.c / tests.h)
 
 4. System Features
-* **Employee Management:** 
-* **Budget Management:**
-* **Supplier Management:** 
-* **Asset Management:** 
-* **Reports:** 
-* **Automated Tests:**
+* Employee Management: Add, search, display, and calculate salary details
+* Budget Management:Track departmental budgets, record expenditure, calculate remaining funds, and flag over-budget departments.
+* Supplier Management:Store and search supplier contact details, email addresses, and locations.
+* Asset Management:Register municipal assets, track purchase values, and inspect asset conditions.
+* Reports:Generate summary metrics for salaries, budgets, asset values, and supplier records.
+* Automated Tests:Built-in test suite (`test.c`/`test.h`) to verify module functionality.
 
 4. Compilation Instructions
 

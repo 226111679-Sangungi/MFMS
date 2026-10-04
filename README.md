@@ -1,5 +1,5 @@
 # MFMS
-# Municipal Financial Management System (MFMS)
+# Municipal Financial Management System
 Course: PAP521S - Programming in Practice (Project A)  
 Group Number: 23
 

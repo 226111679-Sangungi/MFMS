@@ -23,22 +23,6 @@ static int g_tests_passed = 0;
 bool empClearInput(void) {
     printf("\n--- Testing Employee Module ---\n");
 
-    
-    double invalid_salary = -5000.0;
-    RUN_TEST(invalid_salary < 0, "Validation: Negative salary detected correctly");
-
-    
-    double basic = 10000.0;
-    double housing = 2000.0;
-    double transport = 1000.0;
-    double total_salary = basic + housing + transport;
-    RUN_TEST(total_salary == 13000.0, "Calculation: Total salary calculation matches expected sum");
-
-    return true;
-}
-bool test_employee_module(void) {
-    printf("\n--- Testing Employee Module ---\n");
-
     double invalid_salary = -5000.0;
     RUN_TEST(invalid_salary < 0, "Validation: Negative salary detected correctly");
 

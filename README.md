@@ -13,7 +13,7 @@ Student 2 (Kadhikwa): Budget Management (budget.c / budget.h)
 Student 3 (Shinedima): Supplier Management (suppliers.c / suppliers.h)
 Student 4 (Kakelo): Asset Management (assets.c / assets.h)
 Student 5 (Mbahuurua): Reports (reports.c / reports.h)
-Student 6 (Gaoseb): Functions, Integration & Validation (main.c)
+Student 6 (!Gaoseb): Functions, Integration & Validation (main.c)
 Student 7 (Sangungi): Testing, Documentation & Git Coordination (tests.c / tests.h)
 
 4. System Features
